@@ -1,0 +1,126 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+};
+
+const PortfolioCard = ({ image, title, path }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (path) {
+      navigate(path);
+    }
+  };
+
+  return (
+    <motion.div
+      variants={itemVariants}
+      className="group cursor-pointer"
+      onClick={handleClick}
+    >
+      <div className="overflow-hidden rounded-lg">
+        <div className="relative pt-[56.25%] overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 rounded-lg"
+          />
+        </div>
+      </div>
+      <h3 className="elegant-text text-2xl text-[#23272B] mt-4 text-center font-semibold">
+        {title}
+      </h3>
+    </motion.div>
+  );
+};
+
+export default function PortofoliuPage() {
+  const portfolioItems = [
+    {
+      title: "Refined Harmony",
+      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%201.JPG",
+      path: "/proiecte/refined-harmony",
+    },
+    {
+      title: "Blue Oasis",
+      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Rezidential/2025.08.06%20AronCotrus-61.jpg",
+      path: "/proiecte/apartament-baneasa",
+    },
+    {
+      title: "Clinica Kilostop",
+      image: "https://horizons-cdn.hostinger.com/17b03086-244e-4175-8abf-ec84dfd4b2a1/16fb52e3687898da153ae02a7bc841c7.jpg",
+      path: "/proiecte/clinica-kilostop",
+    },
+    {
+      title: "Modern Farmhouse",
+      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/Bucatarie%203.JPG",
+      path: "/proiecte/modern-farmhouse",
+    },
+    {
+      title: "Warm Heaven",
+      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/1.jpg",
+      path: "/proiecte/warm-heaven",
+    },
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <main className="pt-24 md:pt-32">
+        <section id="portofoliu" className="py-20 md:py-32 bg-[#FAF9F7]">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={containerVariants}
+              className="text-center mb-16"
+            >
+              <h1 className="elegant-text text-4xl md:text-5xl mb-4">
+                Portofoliu
+              </h1>
+              <p className="modern-sans text-lg max-w-2xl mx-auto text-[#23272B]/80">
+                Explorați o selecție a proiectelor noastre care demonstrează angajamentul nostru față de excelență și design inovator.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={containerVariants}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+            >
+              {portfolioItems.map((item, index) => (
+                <PortfolioCard key={index} image={item.image} title={item.title} path={item.path} />
+              ))}
+            </motion.div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    /* #FAF9F7 */
+    --foreground: 210 12% 16%;
+    /* #23272B */
+
+    --card: 40 33% 98%;
+    --card-foreground: 210 12% 16%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 210 12% 16%;
+
+    --primary: 210 12% 16%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 210 12% 16%;
+    --secondary-foreground: 40 33% 98%;
+
+    --muted: 210 12% 16%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 220 13% 91%;
+    /* Lighter gray for accent to contrast with #23272B text on hover */
+    --accent-foreground: 210 12% 16%;
+    /* Text color on accent background */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 12% 16%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-color: #FAF9F7;
+    /* Explicitly set body background */
+    color: #23272B;
+    /* Explicitly set body text color */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #FAF9F7 0%, #F5F4F2 100%);
+}
+
+.elegant-text {
+  font-family: "Playfair Display", serif;
+  color: #23272B;
+}
+
+.modern-sans {
+  font-family: "Montserrat", sans-serif;
+  color: #23272B;
+}
+
+.service-card {
+  @apply relative overflow-hidden rounded-lg p-6 transition-all duration-300 hover:shadow-xl;
+  background: rgba(250, 249, 247, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(35, 39, 43, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover::before {
+  border-color: rgba(35, 39, 43, 0.2);
+}
