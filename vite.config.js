@@ -234,7 +234,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	base: '/elite-interiors/',
+	base: '/',
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
