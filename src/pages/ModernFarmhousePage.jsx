@@ -33,7 +33,7 @@ export default function ModernFarmhousePage() {
               Modern Farmhouse
             </h1>
             <p className="modern-sans text-lg md:text-xl max-w-3xl mx-auto text-[#23272B]/80">
-              Stilul traditional intalneste modernul intr-un proiect conturat a fi elegant si primitor. Treptele din stejar masiv transmit putere, durabilitate si longevitate.
+              Stilul tradițional întâlnește modernul într-un proiect conturat a fi elegant și primitor. Treptele din stejar masiv transmit putere, durabilitate și longevitate.
             </p>
           </div>
 

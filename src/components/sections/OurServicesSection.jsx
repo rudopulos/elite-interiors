@@ -48,7 +48,7 @@ export default function OurServicesSection() {
     },
     {
       title: 'Interior Design Virtual',
-      text: 'Redescoperă-ți spațiul cu ușurință, în propriul tău ritm. Serviciul nostru de Virtual Interior Design Virtual îți oferă aceeași atenție la detaliu și proiectare personalizată, dar cu flexibilitatea comunicării la distanță. Primești planuri de design clare și liste de achiziții atent selectate, astfel încât să-ți transformi locuința pe un parcurs adaptat programului și ritmului tău de viață.',
+      text: 'Redescoperă-ți spațiul cu ușurință, în propriul tău ritm. Serviciul nostru de Design Interior Virtual îți oferă aceeași atenție la detaliu și proiectare personalizată, dar cu flexibilitatea comunicării la distanță. Primești planuri de design clare și liste de achiziții atent selectate, astfel încât să-ți transformi locuința pe un parcurs adaptat programului și ritmului tău de viață.',
       image: 'https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/serviciile%20noastre/WhatsApp%20Image%202025-09-09%20at%2011.00.37.jpeg',
       reverse: true,
     },

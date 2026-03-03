@@ -48,7 +48,7 @@ export default function ServicesSection() {
           className="text-center mb-16"
         >
           <h2 className="elegant-text text-4xl md:text-5xl mb-4">
-            Solutii <span>potrivite</span> spatiului tau
+            Soluții <span>potrivite</span> spațiului tău
           </h2>
         </motion.div>
 

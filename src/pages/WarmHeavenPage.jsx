@@ -62,7 +62,7 @@ export default function WarmHeavenPage() {
         <h1 className="elegant-text text-4xl md:text-6xl text-center mb-8 text-[#23272B]">
           Warm Heaven
         </h1>
-        <p className="modern-sans text-lg text-center max-w-3xl mx-auto mb-12 text-[#23272B]/80">Un proiect care a fost nascut din dorința de simplitate si cu buget redus, dar înzestrat cu o energie caldă și primitoare. Fiecare colț al spațiului invită la relaxare și la trăiri autentice. Funcționalitatea a fost integrată astfel încât totul să fie la îndemână, fără a umbri farmecul locului. Atmosfera a fost gandita ca una prietenoasă și sinceră, gândită să facă oaspeții să se simtă imediat acasă.</p>
+        <p className="modern-sans text-lg text-center max-w-3xl mx-auto mb-12 text-[#23272B]/80">Un proiect care a fost născut din dorința de simplitate și cu buget redus, dar înzestrat cu o energie caldă și primitoare. Fiecare colț al spațiului invită la relaxare și la trăiri autentice. Funcționalitatea a fost integrată astfel încât totul să fie la îndemână, fără a umbri farmecul locului. Atmosfera a fost gândită ca una prietenoasă și sinceră, menită să facă oaspeții să se simtă imediat acasă.</p>
         <Gallery images={projectImages.map(img => img.src)} />
       </section>
     </main>
