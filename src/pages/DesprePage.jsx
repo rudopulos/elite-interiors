@@ -56,12 +56,9 @@ export default function DesprePage() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="md:w-1/2">
-            <h2 className="elegant-text text-3xl md:text-4xl mb-6">Misiunea Noastră</h2>
+            <h2 className="elegant-text text-3xl md:text-4xl mb-6">Cu ce te ajut?</h2>
             <p className="modern-sans text-lg mb-4">
-              La Elite Interiors, știm că designul interior este mai mult decât estetică, este despre crearea de experiențe și spații care îmbunătățesc viața. Abordarea noastră combină arta cu funcționalitatea, asigurându-ne că fiecare proiect nu este doar frumos, ci și perfect adaptat nevoilor clientului.
-            </p>
-            <p className="modern-sans text-lg">
-              Lucrăm cu pasiune pentru a transforma viziunile în realitate, colaborând strâns cu fiecare client pentru a înțelege pe deplin aspirațiile și stilul său de viață. Fiecare detaliu este atent considerat, de la conceptul inițial până la finisajele finale.
+              Te ajut să transformi spațiul tău într-un interior funcțional, echilibrat și coerent, adaptat stilului tău de viață sau identității businessului tău. Îți ofer concept și direcție estetică clară, organizare eficientă a spațiului și un proiect tehnic complet, pregătit pentru implementare. Gândesc mobilier personalizat, optimizat și coordonez procesul astfel încât rezultatul final să fie exact așa cum a fost planificat. Creez spații care nu doar arată bine, ci funcționează corect și natural în fiecare zi.
             </p>
           </div>
           <div className="md:w-1/2 h-64 md:h-auto md:min-h-[400px] bg-gray-200 rounded-lg overflow-hidden">
