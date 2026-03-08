@@ -13,9 +13,13 @@ const ContactSection = React.forwardRef((props, ref) => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="elegant-text text-4xl md:text-5xl mb-8">
+          <h2 className="elegant-text text-4xl md:text-5xl mb-4">
             Contactează-ne
           </h2>
+          <p className="text-lg text-gray-600">
+            Ne poți suna direct la: <a href="tel:+40787370850" className="font-semibold hover:text-gray-900 transition-colors">+40 (787) 370 850</a>
+          </p>
+          <p className="text-lg text-gray-600 mt-2">sau lasă-ne un mesaj folosind formularul de mai jos.</p>
         </motion.div>
         <ContactForm />
       </div>
