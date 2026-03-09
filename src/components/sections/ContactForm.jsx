@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormStatus(null); 
+    setFormStatus(null);
 
     if (!formData.name || !formData.email || !formData.message) {
       setFormStatus({ type: 'error', message: 'Vă rugăm completați toate câmpurile obligatorii.' });
@@ -41,13 +41,27 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log("Form data submitted:", formData);
-      setFormStatus({ type: 'success', message: 'Mesajul a fost trimis cu succes! Vă vom contacta în curând.' });
-      
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setTermsAccepted(false);
+      const response = await fetch("https://formspree.io/f/xzdjdkvd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormStatus({ type: 'success', message: 'Mesajul a fost trimis cu succes! Vă vom contacta în curând.' });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setTermsAccepted(false);
+      } else {
+        const errorData = await response.json();
+        if (Object.hasOwn(errorData, 'errors')) {
+          setFormStatus({ type: 'error', message: errorData.errors.map(err => err.message).join(", ") });
+        } else {
+          setFormStatus({ type: 'error', message: 'A apărut o eroare la trimiterea mesajului. Vă rugăm încercați din nou.' });
+        }
+      }
     } catch (error) {
       console.error("Form submission error:", error);
       setFormStatus({ type: 'error', message: 'A apărut o eroare la trimiterea mesajului. Vă rugăm încercați din nou.' });
@@ -77,7 +91,7 @@ export default function ContactForm() {
           aria-label="Nume"
         />
       </div>
-      
+
       <div className="space-y-2">
         <Label htmlFor="email" className="text-lg modern-sans">Email</Label>
         <Input
