@@ -34,7 +34,7 @@ export default function HeroSection({
         {/* Light overlay to make dark text readable */}
         <div className="absolute inset-0 bg-white/40"></div>
         {/* Subtle Gradient fade to blend with the next section */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#FAF9F7]/90 to-transparent"></div>
+        <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-[#FAF9F7]/70 to-transparent"></div>
       </div>
 
       {/* Content */}
