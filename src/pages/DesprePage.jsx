@@ -62,7 +62,7 @@ export default function DesprePage() {
             </p>
           </div>
           <div className="md:w-1/2 h-64 md:h-auto md:min-h-[400px] bg-gray-200 rounded-lg overflow-hidden">
-            <img alt="Elegant interior design detail" className="w-full h-full object-cover" src="https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Despre/Adina-15.jpg" />
+            <img alt="Elegant interior design detail" className="w-full h-full object-cover" src="https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Despre/Adina-15-2.jpg" />
           </div>
         </div>
       </div>
