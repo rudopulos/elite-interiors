@@ -19,30 +19,34 @@ export default function HeroSection({
   return (
     <header
       id="hero"
-      className="relative min-h-screen flex flex-col lg:flex-row overflow-hidden bg-[#FAF9F7]"
+      className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Left side: Content */}
-      <div className="flex-1 flex items-center justify-center p-8 lg:p-16 z-10 pt-32 lg:pt-0">
-        <motion.div initial="initial" animate="animate" variants={fadeIn} className="max-w-xl text-left">
-          <h1 className="elegant-text text-5xl md:text-7xl mb-6 text-[#1A1A1A] leading-tight">
-            BY ELITE<br />INTERIORS
-          </h1>
-          <p className="modern-sans text-lg md:text-xl text-gray-600 mb-8">
-            La Elite Interiors, știm că designul interior este mai mult decât estetică. Creăm spații atemporale.
-          </p>
-        </motion.div>
+      {/* Background Image Container */}
+      <div
+        className="absolute inset-0 w-full h-full z-0"
+        style={{
+          backgroundImage: 'url("https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/hero/WhatsApp%20Image%202026-03-03%20at%2012.51.02.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Light overlay to make dark text readable */}
+        <div className="absolute inset-0 bg-white/40"></div>
+        {/* Gradient fade to blend with the next section */}
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#FAF9F7] to-transparent"></div>
       </div>
 
-      {/* Right side: Image */}
-      <div className="flex-1 relative h-[50vh] lg:h-screen w-full">
-        <div
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{
-            backgroundImage: 'url("https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/hero/WhatsApp%20Image%202026-03-03%20at%2012.51.02.jpeg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+      {/* Content */}
+      <div className="container mx-auto px-4 z-10 relative pt-20">
+        <motion.div initial="initial" animate="animate" variants={fadeIn} className="text-center max-w-4xl mx-auto">
+          <h1 className="elegant-text text-5xl md:text-7xl mb-6 text-[#2C3034] tracking-wide drop-shadow-sm">
+            BY ELITE INTERIORS
+          </h1>
+          <p className="modern-sans text-lg md:text-2xl text-[#3A3F44] max-w-3xl mx-auto font-medium drop-shadow-sm">
+            La Elite Interiors, știm că designul interior este mai mult decât estetică
+          </p>
+        </motion.div>
       </div>
     </header>
   );
