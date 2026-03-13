@@ -5,7 +5,7 @@ import { Instagram, Facebook } from "lucide-react";
 import Gallery from "@/components/Gallery";
 
 const images = [
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Kilostop/2025.07.26%20Kilostop-107%20GIMP.jpg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Kilostop/2025.07.26%20Kilostop-107.jpg",
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Kilostop/2025.07.26%20Kilostop%20Portrete-15.jpg",
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Kilostop/2025.07.26%20Kilostop-100.jpg",
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Kilostop/2025.07.26%20Kilostop-104.jpg",

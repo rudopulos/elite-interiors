@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import Gallery from "@/components/Gallery";
 
 const images = [
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%203%20gimp.png",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%202%20gimp.png",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%201%20gimp.png",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%201.JPG",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%202.jpg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%203.jpg",
 ];
 
 const containerVariants = {

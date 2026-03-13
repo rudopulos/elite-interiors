@@ -9,12 +9,12 @@ const images = [
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/Bucatarie%201%20(1).JPG",
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/Dormitor%202.JPG",
   "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/Dormitor%203.JPG",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/1.1.gimp2.jpg",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/3.1.gimp.jpg",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.08%20gimp3.jpeg",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09%20gimp(4).jpeg",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09%20(1)gimp5.jpeg",
-  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09%20(2)gimp6.jpeg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/1.1..jpg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/3.1..jpg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.08.jpeg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09.jpeg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09%20(1).jpeg",
+  "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Modern%20Farmhouse/WhatsApp%20Image%202025-09-07%20at%2017.13.09%20(2).jpeg",
 ];
 
 export default function ModernFarmhousePage() {

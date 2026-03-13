@@ -76,9 +76,9 @@ const PortfolioCard = ({ image, title, path, isMobile = false }) => {
 
 export default function PortfolioSection() {
   const portfolioItems = [
-     {
+    {
       title: "Refined Harmony",
-      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%201.jpg.png",
+      image: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Refined%20Harmony/Bucatarie%201.JPG",
       path: "/proiecte/refined-harmony",
     },
     {
