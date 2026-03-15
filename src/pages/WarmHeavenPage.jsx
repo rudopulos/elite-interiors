@@ -4,55 +4,55 @@ import Gallery from "@/components/Gallery";
 import { Facebook, Instagram } from 'lucide-react';
 export default function WarmHeavenPage() {
   const projectImages = [{
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/1.jpg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/1_result.jpg",
     alt: "Living room with warm tones"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2%20Gimp.jpg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_result.jpg",
     alt: "Cozy bedroom design"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_1%20(2)gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_1%20(2)_result.jpg",
     alt: "Cozy bedroom design"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_1(3)gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_1(3)_result.jpg",
     alt: "Kitchen details"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_2gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_2_result.jpg",
     alt: "Relaxing corner with armchair"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_3gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/2_3_result.jpg",
     alt: "Bathroom with natural light"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/4_2gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/4_2_result.jpg",
     alt: "Detail of the living space"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/4gimp.jpg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/4_result.jpg",
     alt: "Warm and inviting corner"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_1gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_1_result.jpg",
     alt: "Image 9"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_2%20(2).jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_2%20(2)_result.jpg",
     alt: "Image 10"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_2.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_2_result.jpg",
     alt: "Image 11"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_4gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_4_result.jpg",
     alt: "Image 12"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5gimp.jpg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/5_result.jpg",
     alt: "Image 13"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/6gimp.jpg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/6_result.jpg",
     alt: "Image 14"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/6_1gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/6_1_result.jpg",
     alt: "Image 15"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/8gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/8_result.jpg",
     alt: "Image 16"
   }, {
-    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/7gimp.jpeg",
+    src: "https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/Warm%20Heaven/7_result.jpg",
     alt: "Image 17"
   }];
   return <div className="bg-[#FAF9F7] min-h-screen">

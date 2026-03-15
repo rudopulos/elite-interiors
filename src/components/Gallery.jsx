@@ -34,11 +34,11 @@ const Gallery = ({ images = [] }) => {
   }
 
   const prev = (e) => {
-    e.stopPropagation()
+    e?.stopPropagation()
     setIndex((i) => (i - 1 + images.length) % images.length)
   }
   const next = (e) => {
-    e.stopPropagation()
+    e?.stopPropagation()
     setIndex((i) => (i + 1) % images.length)
   }
 

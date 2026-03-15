@@ -25,7 +25,7 @@ export default function HeroSection({
       <div
         className="absolute inset-0 w-full h-full z-0"
         style={{
-          backgroundImage: 'url("https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/hero/WhatsApp%20Image%202026-03-03%20at%2012.51.02.jpeg")',
+          backgroundImage: 'url("https://jboovofuecyfrsbbahrs.supabase.co/storage/v1/object/public/hero/WhatsApp%20Image%202026-03-03%20at%2012.51.02_result.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

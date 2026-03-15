@@ -22,7 +22,7 @@ const Navbar = ({ onContactClick }) => {
   }, []);
 
   const handleContactNavigation = () => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/' && onContactClick) {
       onContactClick();
     } else {
       navigate('/#contact');
